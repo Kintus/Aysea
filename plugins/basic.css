@@ -1,0 +1,130 @@
+/*Screen Sections*/
+.leftSection {
+    background-image: url("../images/background-water-parchment.png");
+    height: 100%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-position: left;
+    }
+.rightSection {
+    background-image: url("../images/background-parchment.png");
+    height: 100%;
+    width: 50%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-position: right;
+    }
+.centerSection {
+    border: none;
+    height: 100%;
+    width: 34px;
+    left: 50%;
+    
+    margin-left: -17px;
+    position: absolute;
+    z-index: 999;
+    }
+
+/*Navigation Bars*/
+.navigationList {
+    display: table;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #8b0000;
+    }
+.navigationTab, .navigationCurrent {
+    display: table-cell;
+    text-align: center;
+    }
+.navigationTab:hover {
+    background-color: #6a0000;
+    }
+.navigationCurrent {
+    background-color: #6a0000;
+    }
+.navigationTab a, .navigationCurrent a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 0px;
+    font-family: "Enchanted Land";
+    font-size: 17pt;
+    text-decoration: none;
+    }
+
+/*Accordian Buttons*/
+.accordianInput {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    }
+.accordianLabel {
+    background-color: rgba(0,0,0,0);
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    position: relative;
+    display: block;
+    font-family: "Enchanted Land";
+    font-size: 22pt;
+    word-spacing: .2em;
+    }
+.accordianBox {
+    position: relative;
+    overflow: hidden;
+    }
+.accordianContent {
+    background: rgba(0,0,0,0);
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 2s, opacity 2s;
+    -o-transition: max-height 2s, opacity 2s;
+    transition: max-height 2s, opacity 2s;
+    }
+.accordianContent p {
+    word-spacing: .2em;
+    margin-left: 1.5em;
+    margin-right: 1em;
+    }
+input:checked ~ .accordianContent {
+    opacity: 1;
+    max-height: 50em;
+    }
+
+/*Text Formatting*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Enchanted Land";
+    font-size:  24pt;
+    text-align: center;
+    word-spacing: .2em;
+    }
+p {
+    font-family: "Enchanted Land";
+    font-size: 20pt;
+    word-spacing: .2em;
+    }
+#textContent {
+    position: absolute;
+    width: calc(100% - 19px);
+    height: calc(100% - 50px);
+    overflow: auto;
+    left: 19px;
+}
+
+/*General Typography*/
+@font-face {
+    font-family: "Enchanted Land";
+    src: url(../fonts/enchantedland.otf);
+}
+@font-face {
+    font-family: "Black Sword";
+    src: url(../fonts/blacksword.otf);
+}

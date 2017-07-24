@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="plugins/basic.css"/>
+    <link rel="stylesheet" href="plugins/leaflet.css"/>
+    <script type="text/javascript" src="plugins/info.js"></script>
+    <script type="text/javascript" src="plugins/leaflet.js"></script>
+    <script type="text/javascript" src="plugins/jquery-3.2.1.min.js"></script>
+    
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        html, body, #map {
+            width: 100%;
+            height: calc(100% - 50px);
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="leftSection">
+        <nav>
+            <ul class="navigationList" id="continentList">
+                <li class="navigationTab" id="kintusTab"><a href="">Kintus</a></li>
+                <li class="navigationTab navigationCurrent" id="ayseaTab"><a href="index.html">Aysea</a></li>
+                <li class="navigationTab" id="oshallTab"><a href="">Oshall</a></li>
+                <li class="navigationTab" id="ekeaTab"><a href="">Ekea</a></li>
+                <li class="navigationTab" id="aekuthTab"><a href="">Aekuth</a></li>
+                <li class="navigationTab" id="krohfTab"><a href="">Krohf</a></li>
+            </ul>
+        </nav>
+        <div id="map"></div>
+    </div>
+    <img class="centerSection" src="images/background-seperator.png")>
+    <div class="rightSection">
+        <nav>
+            <ul class="navigationList" id="sectionList">
+                <li class="navigationTab navigationCurrent" id="generalTab"><a href="#General">General</a></li>
+                <li class="navigationTab" id="religionTab"><a href="#Religion">Religion</a></li>
+                <li class="navigationTab" id="kingdomsTab"><a href="#Kindoms">Kingdoms</a></li>
+                <li class="navigationTab" id="historyTab"><a href="#History">History</a></li>
+                <li class="navigationTab" id="legendsTab"><a href="#Legends">Legends</a></li>
+            </ul>
+        </nav>
+        <div id="textContent"></div>
+    </div>
+
+    <script>
+        //=====Create Map=====
+        var map = L.map('map', {
+            tms: true,
+            minZoom: 1,
+            maxZoom: 4,
+            attributionControl: false,
+            zoomControl: false,
+            crs: L.CRS.Simple
+        }).setView([0, 0], 1);
+        
+        var southWest = map.unproject([0, 3836], map.getMaxZoom());
+        var northEast = map.unproject([3035, 0], map.getMaxZoom());
+        map.setMaxBounds(new L.LatLngBounds(southWest, northEast));
+        
+        //=====Add Layers=====
+        L.tileLayer('./tiles/{z}/{x}/{y}.png').addTo(map);
+        
+        //=====Create Icons=====
+        var cityMarker = L.icon({
+            iconUrl: './images/city-marker.svg',
+            iconSize: [20, 16],
+            popupAnchor: [0, -8]
+        });        
+        var townMarker = L.icon({
+            iconUrl: './images/town-marker.svg',
+            iconSize: [10, 10],
+            popupAnchor: [0, -5]
+        });
+        var tribeMarker = L.icon({
+            iconUrl: './images/tribe-marker.svg',
+            iconSize: [10, 10],
+            popupAnchor: [0, -5]
+        });
+        
+        //=====Create Popups=====
+        function setPopup(content){
+            return L.popup({closeButton: false}).setContent(content)
+        }
+        
+        
+        //=====Set Kingdoms=====
+        //Set Kingdoms with a new layer
+        
+        //=====Set Cities=====
+        //Part of Fawaluce
+        var cityFehrow = L.marker([-154.25, 20.75], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Fehrow'));
+        var cityAberestir = L.marker([-166, 55.75], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Aberestir'));
+        //Part of Auxora
+        //var cityPhandra = L.marker([-117.5, 135.75], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Phandra'));
+        //Part of Odegone
+        //var cityShando = L.marker([-98.125, 127], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Shando'));
+        //var cityRylago = L.marker([-66.875, 156.625], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Rylago'));
+        //Part of Luminor
+        //var cityKareem = L.marker([-50.875, 139.875], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Kareem'));
+        //var cityVrankot = L.marker([-33.5, 159.5], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Vrankot'));
+        //Outside of Kingdoms
+        //var cityCopperStead = L.marker([-83.75, 67.875], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Copper Stead'));
+        
+        //=====Set Towns=====-
+        //Part of Fawaluce
+        var townMaflok = L.marker([-162.8125, 35], {icon: townMarker}).addTo(map).bindPopup(setPopup('Maflok'));
+        var townCaerlon = L.marker([-147.8125, 44.875], {icon: townMarker}).addTo(map).bindPopup(setPopup('Caerlon'));
+        var townVenaya = L.marker([-133.75, 30.5625], {icon: townMarker}).addTo(map).bindPopup(setPopup('Venaya'));
+        var townUllev = L.marker([-158.875, 8.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Ullev'));
+        var townTrouberk = L.marker([-177, 22.75], {icon: townMarker}).addTo(map).bindPopup(setPopup('Trouberk'));
+        var townLeveok = L.marker([-143.75, 64], {icon: townMarker}).addTo(map).bindPopup(setPopup('Leveok'));
+        var townKelni = L.marker([-184.375, 55.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Kelni'));
+        var townFrigidwaves = L.marker([-121.25, 22.5], {icon: townMarker}).addTo(map).bindPopup(setPopup('Frigidwaves'));
+        var townSoftbreeze = L.marker([-154.25, 75], {icon: townMarker}).addTo(map).bindPopup(setPopup('Softbreeze'));
+        var townLubost = L.marker([-140.625, 77.75], {icon: townMarker}).addTo(map).bindPopup(setPopup('Lubost'));
+        var townSteepvalley = L.marker([-122.375, 60.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Steepvalley'));
+
+        //Part of Auxora
+        
+        //Part of Odegone
+        
+        //Part of Luminor
+        
+        //=====Set Villages=====
+        
+        //=====Dev Lat Long Tool=====
+        //map.on('click', function(e) {alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)});
+        
+        //=====Set CurrentTab=====
+        changeTextGeneral();
+        
+        //=====Change Section Tab=====
+        document.getElementById("sectionList").addEventListener("click",function(e) {
+            $("#sectionList>li.navigationTab").removeClass("navigationCurrent");
+            $(e.target).parent().addClass("navigationCurrent");
+            
+            if($("#generalTab").hasClass("navigationCurrent")) {changeTextGeneral();}
+            else if($("#religionTab").hasClass("navigationCurrent")) {changeTextReligion();}
+            else if($("#kingdomsTab").hasClass("navigationCurrent")) {changeTextKingdoms();}
+            else if($("#historyTab").hasClass("navigationCurrent")) {changeTextHistory();}
+            else if($("#legendsTab").hasClass("navigationCurrent")) {changeTextLegends();}
+        });
+
+    </script>
+</body>
+
+</html>
