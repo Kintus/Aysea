@@ -44,7 +44,6 @@
                 <li class="navigationTab" id="religionTab"><a href="#Religion">Religion</a></li>
                 <li class="navigationTab" id="kingdomsTab"><a href="#Kindoms">Kingdoms</a></li>
                 <li class="navigationTab" id="historyTab"><a href="#History">History</a></li>
-                <li class="navigationTab" id="legendsTab"><a href="#Legends">Legends</a></li>
             </ul>
         </nav>
         <div id="textContent"></div>
@@ -87,7 +86,7 @@
         
         //=====Create Popups=====
         function setPopup(content){
-            return L.popup({closeButton: false}).setContent(content)
+            return L.popup({closeButton: false}).setContent('<a onclick=openInfo("kingdomsTab",' + toLower(content) + ')>' + content + '</a>')
         }
         
         
@@ -111,7 +110,7 @@
         
         //=====Set Towns=====-
         //Part of Fawaluce
-        var townMaflok = L.marker([-162.8125, 35], {icon: townMarker}).addTo(map).bindPopup(setPopup('Maflok'));
+        var townMaflok = L.marker([-162.8125, 35], {icon: townMarker}) .addTo(map).bindPopup(setPopup('Maflok'));
         var townCaerlon = L.marker([-147.8125, 44.875], {icon: townMarker}).addTo(map).bindPopup(setPopup('Caerlon'));
         var townVenaya = L.marker([-133.75, 30.5625], {icon: townMarker}).addTo(map).bindPopup(setPopup('Venaya'));
         var townUllev = L.marker([-158.875, 8.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Ullev'));
@@ -122,7 +121,6 @@
         var townSoftbreeze = L.marker([-154.25, 75], {icon: townMarker}).addTo(map).bindPopup(setPopup('Softbreeze'));
         var townLubost = L.marker([-140.625, 77.75], {icon: townMarker}).addTo(map).bindPopup(setPopup('Lubost'));
         var townSteepvalley = L.marker([-122.375, 60.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Steepvalley'));
-
         //Part of Auxora
         
         //Part of Odegone
@@ -134,19 +132,18 @@
         //=====Dev Lat Long Tool=====
         //map.on('click', function(e) {alert("Lat, Lon : " + e.latlng.lat + ", " + e.latlng.lng)});
         
+        //=====Make String Lowercase=====
+        function toLower(str)
+        {
+            return str.toLowerCase();
+        }
+        
         //=====Set CurrentTab=====
         changeTextGeneral();
         
         //=====Change Section Tab=====
         document.getElementById("sectionList").addEventListener("click",function(e) {
-            $("#sectionList>li.navigationTab").removeClass("navigationCurrent");
-            $(e.target).parent().addClass("navigationCurrent");
-            
-            if($("#generalTab").hasClass("navigationCurrent")) {changeTextGeneral();}
-            else if($("#religionTab").hasClass("navigationCurrent")) {changeTextReligion();}
-            else if($("#kingdomsTab").hasClass("navigationCurrent")) {changeTextKingdoms();}
-            else if($("#historyTab").hasClass("navigationCurrent")) {changeTextHistory();}
-            else if($("#legendsTab").hasClass("navigationCurrent")) {changeTextLegends();}
+            openInfo($(e.target).parent().attr("id"), 'a');
         });
 
     </script>

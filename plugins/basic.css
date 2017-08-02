@@ -93,6 +93,8 @@
     word-spacing: .2em;
     margin-left: 1.5em;
     margin-right: 1em;
+    margin-top: .2em;
+    margin-bottom: .5em;
     }
 input:checked ~ .accordianContent {
     opacity: 1;

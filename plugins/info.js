@@ -1,9 +1,10 @@
 //=====Change Text Content=====
 function changeTextGeneral() {
     $("#textContent").html(
+        "<div><h2><u>Aysea</u></h2></div>" +
         "<div class='accordianBox'>" +
-            "<input class='accordianInput' id='general1' type='checkbox'>" +
-            "<label class='accordianLabel' for='general1'>-Description</label>" +
+            "<input class='accordianInput' id='ayseaDescription' type='checkbox'>" +
+            "<label class='accordianLabel' for='ayseaDescription'>-Description</label>" +
             "<div class='accordianContent' overflow='scroll'>" +
                 "<p>" + 
                     "&nbsp&nbsp&nbsp&nbsp Aysea is an expansive continent, divided between north and south " +
@@ -31,8 +32,8 @@ function changeTextGeneral() {
             "</div>" +
         "</div>" +
         "<div class='accordianBox'>" +
-            "<input class='accordianInput' id='general2' type='checkbox'>" +
-            "<label class='accordianLabel' for='general2'>-Races</label>" +
+            "<input class='accordianInput' id='races' type='checkbox'>" +
+            "<label class='accordianLabel' for='races'>-Races</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
                     "<u>Common:</u><br>" +
@@ -56,7 +57,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion1'>-Skepari (Logos, Sol)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -65,7 +69,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion2'>-Lozhu (Ethos, Luna)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -74,7 +81,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion3'>-Vafir (Pathos, Aether)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -84,7 +94,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion4'>-Dulmir (The King, LG)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -93,7 +106,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion5'>-Kostre (The Warrior, CG)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -102,7 +118,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion6'>-Midla (The Mediator, LN)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -111,7 +130,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion7'>-Faril (The Vagabond, CN)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -120,7 +142,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion8'>-Higgya (The Observer, N)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -129,7 +154,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion9'>-Gaeten (The Healer, NG)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -138,7 +166,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion10'>-Stahlu (The Thief, NE)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -147,7 +178,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion11'>-Ofirik (The Tyrant, LE)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -156,7 +190,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion12'>-Agirni (The Profligate, CE)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -166,7 +203,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion13'>-Afayel (The Servant)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -175,7 +215,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion14'>-Sivete (The Governor)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -184,7 +227,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion15'>-Holran (The Loyal)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -193,7 +239,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion16'>-Adru (The Merchant)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -202,7 +251,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion17'>-Landeit (The Explorer)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -211,7 +263,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion18'>-Fehrir (The Cordial)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -220,7 +275,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion19'>-Barir (The Victor)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -229,7 +287,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion21'>-Lauknen (The Flora)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -238,7 +299,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion20'>-Luratt (The Fauna)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -247,7 +311,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion22'>-Stiath (The Guide)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -256,7 +323,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion23'>-Ginere (The Abyss)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -265,7 +335,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion24'>-Aldartal (The Patient)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -274,7 +347,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion25'>-Halro (The Shield)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -283,7 +359,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion26'>-Lirthen (The Muse)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -292,7 +371,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion27'>-Anvit (The Scholar)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -301,7 +383,10 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion28'>-Firdue (The Cycle)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" +
@@ -310,45 +395,52 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion29'>-Vaythus (The Empty)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "More information required" +
+                    "Common Domains: <br>" +
+                    "Description: <br>" +
+                    "Favored Weapon: <br>" +
+                    "Symbol: <br>" +
                 "</p>" +
             "</div>" +
         "</div>" 
     );
 }
-    
+
 function changeTextKingdoms() {
     $("#textContent").html(
+        "<div><h2><u>The Luminor Empire</u></h2></div>" +
         "<div class='accordianBox'>" +
-            "<input class='accordianInput' id='kingdoms1' type='checkbox'>" +
-            "<label class='accordianLabel' for='kingdoms1'>-The Luminor Empire</label>" +
+            "<input class='accordianInput' id='luminorDescription' type='checkbox'>" +
+            "<label class='accordianLabel' for='luminorDescription'>-Description</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
                     "More information required" +
                 "</p>" +
             "</div>" +
         "</div>" +
+        "<div><h2><u>Odegone Kingdom</u></h2></div>" +
         "<div class='accordianBox'>" +
-            "<input class='accordianInput' id='kingdoms2' type='checkbox'>" +
-            "<label class='accordianLabel' for='kingdoms2'>-Odegone Kingdom</label>" +
+            "<input class='accordianInput' id='odegoneDescription' type='checkbox'>" +
+            "<label class='accordianLabel' for='odegoneDescription'>-Description</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
                     "More information required" +
                 "</p>" +
             "</div>" +
         "</div>" +
+        "<div><h2><u>Fawaluce Kingdom</u></h2></div>" +
         "<div class='accordianBox'>" +
-            "<input class='accordianInput' id='kingdoms3' type='checkbox'>" +
-            "<label class='accordianLabel' for='kingdoms3'>-Fawaluce Kingdom</label>" +
+            "<input class='accordianInput' id='aberestir' type='checkbox'>" +
+            "<label class='accordianLabel' for='aberestir'>-Description</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
                     "More information required" +
                 "</p>" +
             "</div>" +
         "</div>" +
+        "<div><h2><u>The Auxora Dynasty</u></h2></div>" +
         "<div class='accordianBox'>" +
-            "<input class='accordianInput' id='kingdoms4' type='checkbox'>" +
-            "<label class='accordianLabel' for='kingdoms4'>-The Auxora Dynasty</label>" +
+            "<input class='accordianInput' id='auxoraDescription' type='checkbox'>" +
+            "<label class='accordianLabel' for='auxoraDescription'>-Description</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
                     "More information required" +
@@ -360,6 +452,7 @@ function changeTextKingdoms() {
 
 function changeTextHistory() {
     $("#textContent").html(
+        "<div><h2><u>History</u></h2></div>" +
         "<div class='accordianBox'>" +
             "<input class='accordianInput' id='history1' type='checkbox'>" +
             "<label class='accordianLabel' for='history1'>-History</label>" +
@@ -372,16 +465,29 @@ function changeTextHistory() {
     );
 }
 
-function changeTextLegends() {
-    $("#textContent").html(
-        "<div class='accordianBox'>" +
-            "<input class='accordianInput' id='legends1' type='checkbox'>" +
-            "<label class='accordianLabel' for='legends1'>-Legends</label>" +
-            "<div class='accordianContent'>" +
-                "<p>" +
-                    "More information required" +
-                "</p>" +
-            "</div>" +
-        "</div>"
-    );
+function openInfo(parentSection, accordianName) {
+    if(parentSection == "generalTab" && !($("#generalTab").hasClass("navigationCurrent"))) {
+        $("#sectionList>li.navigationTab").removeClass("navigationCurrent");
+        $("#generalTab").addClass("navigationCurrent");
+        changeTextGeneral();
+        document.getElementById().scrollIntoView(accordianName);
+    }
+    else if(parentSection == "religionTab" && !($("#religionTab").hasClass("navigationCurrent"))) {
+        $("#sectionList>li.navigationTab").removeClass("navigationCurrent");
+        $("#religionTab").addClass("navigationCurrent");
+        changeTextReligion();
+        document.getElementById().scrollIntoView(accordianName);
+    }
+    else if(parentSection == "kingdomsTab" && !($("#kingdomsTab").hasClass("navigationCurrent"))) {
+        $("#sectionList>li.navigationTab").removeClass("navigationCurrent");
+        $("#kingdomsTab").addClass("navigationCurrent");
+        changeTextKingdoms();
+        document.getElementById().scrollIntoView(accordianName);
+    }
+    else if(parentSection == "historyTab" && !($("#historyTab").hasClass("navigationCurrent"))) {
+        $("#sectionList>li.navigationTab").removeClass("navigationCurrent");
+        $("#historyTab").addClass("navigationCurrent");
+        changeTextHistory();
+        document.getElementById().scrollIntoView(accordianName);
+    }
 }
