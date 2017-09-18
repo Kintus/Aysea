@@ -57,9 +57,8 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion1'>-Skepari (Logos, Sol)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Creation<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -69,9 +68,8 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion2'>-Lozhu (Ethos, Luna)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Order<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -81,9 +79,8 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion3'>-Vafir (Pathos, Aether)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Chaos<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -94,9 +91,8 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion4'>-Dulmir (The King, LG)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Lawful Good<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -106,9 +102,8 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion5'>-Kostre (The Warrior, CG)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Chaotic Good<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -118,9 +113,8 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion6'>-Midla (The Mediator, LN)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Lawful Neutral<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -130,9 +124,8 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion7'>-Faril (The Vagabond, CN)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Chaotic Neutral<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -142,9 +135,8 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion8'>-Higgya (The Observer, N)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Neutral<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -154,9 +146,8 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion9'>-Gaeten (The Healer, NG)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Neutral Good<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -166,9 +157,8 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion10'>-Stahlu (The Thief, NE)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Neutral Evil<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -178,9 +168,8 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion11'>-Ofirik (The Tyrant, LE)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Lawful Evil<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -190,9 +179,8 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion12'>-Agirni (The Profligate, CE)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Chaotic Evil<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -203,9 +191,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion13'>-Afayel (The Servant)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Service, Hearth<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Dagger<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -215,9 +203,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion14'>-Sivete (The Governor)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Community, Cities, Towns<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Club<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -227,9 +215,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion15'>-Holran (The Loyal)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Loyalty, Family, Friendship<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Long Blade<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -239,9 +227,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion16'>-Adru (The Merchant)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Wealth, Trade<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Short Blade<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -251,9 +239,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion17'>-Landeit (The Explorer)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Discovery, Exploration, Invention, Creation<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Pick<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -263,9 +251,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion18'>-Fehrir (The Cordial)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Peace, Jubilation, Victory<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Gauntlet<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -275,9 +263,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion19'>-Barir (The Victor)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: War, Battle, Victory<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Spear<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -287,9 +275,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion21'>-Lauknen (The Flora)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Nature, Plants, Weather<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Hammer<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -299,9 +287,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion20'>-Luratt (The Fauna)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Nature, Animals, Beasts<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Whip<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -311,9 +299,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion22'>-Stiath (The Guide)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Light, Stars<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Staff<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -323,9 +311,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion23'>-Ginere (The Abyss)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Dark, Space<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Mace<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -335,9 +323,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion24'>-Aldartal (The Patient)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Health, Time<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Axe<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -347,9 +335,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion25'>-Halro (The Shield)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Protection, Leadership<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Polearm<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -359,9 +347,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion26'>-Lirthen (The Muse)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Creativity, Art<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Bow<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -371,9 +359,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion27'>-Anvit (The Scholar)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Intelligence, Emotions<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Rapier<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -383,9 +371,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion28'>-Firdue (The Cycle)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Life, Death, Rebirth<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Harvest tools (Sickle/Scythe)<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +
@@ -395,9 +383,9 @@ function changeTextReligion() {
             "<label class='accordianLabel' for='religion29'>-Vaythus (The Empty)</label>" +
             "<div class='accordianContent'>" +
                 "<p>" +
-                    "Common Domains: <br>" +
+                    "Common Domains: Destruction, Nothingness<br>" +
                     "Description: <br>" +
-                    "Favored Weapon: <br>" +
+                    "Favored Weapon: Flail<br>" +
                     "Symbol: <br>" +
                 "</p>" +
             "</div>" +

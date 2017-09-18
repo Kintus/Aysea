@@ -7,6 +7,7 @@
     top: 0;
     position: absolute;
     background-position: left;
+    transition-duration: 2s;
     }
 .rightSection {
     background-image: url("../images/background-parchment.png");
@@ -16,6 +17,7 @@
     top: 0;
     position: absolute;
     background-position: right;
+    transition-duration: 2s;
     }
 .centerSection {
     border: none;
@@ -26,6 +28,7 @@
     margin-left: -17px;
     position: absolute;
     z-index: 999;
+    transition-duration: 2s;
     }
 
 /*Navigation Bars*/

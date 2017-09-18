@@ -11,6 +11,7 @@
     
     <style>
         body {
+            overflow: hidden;
             padding: 0;
             margin: 0;
         }
@@ -98,9 +99,10 @@
         var cityFehrow = L.marker([-154.25, 20.75], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Fehrow'));
         var cityAberestir = L.marker([-166, 55.75], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Aberestir'));
         //Part of Auxora
-        //var cityPhandra = L.marker([-117.5, 135.75], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Phandra'));
+        var cityPhandra = L.marker([-117.5, 135.75], {icon: cityMarker}).addTo(map).bindPopup(setPopup('West Phandra'));
+        var cityPhandra = L.marker([-116.75, 138], {icon: cityMarker}).addTo(map).bindPopup(setPopup('East Phandra'));
         //Part of Odegone
-        //var cityShando = L.marker([-98.125, 127], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Shando'));
+        var cityShando = L.marker([-98.125, 127], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Shando'));
         //var cityRylago = L.marker([-66.875, 156.625], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Rylago'));
         //Part of Luminor
         //var cityKareem = L.marker([-50.875, 139.875], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Kareem'));
@@ -122,7 +124,8 @@
         var townLubost = L.marker([-140.625, 77.75], {icon: townMarker}).addTo(map).bindPopup(setPopup('Lubost'));
         var townSteepvalley = L.marker([-122.375, 60.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Steepvalley'));
         //Part of Auxora
-        
+        var lairMartina = L.marker([-112.6875, 133.9375], {icon:townMarker}).addTo(map).bindPopup(setPopup("Martina's Hideout"));
+        var townTrylef = L.marker([-130.5, 80.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Trylef'));
         //Part of Odegone
         
         //Part of Luminor
@@ -137,15 +140,38 @@
         {
             return str.toLowerCase();
         }
-        
+
         //=====Set CurrentTab=====
         changeTextGeneral();
         
         //=====Change Section Tab=====
-        document.getElementById("sectionList").addEventListener("click",function(e) {
+        document.getElementById("sectionList").addEventListener("click",function(e){
             openInfo($(e.target).parent().attr("id"), 'a');
         });
 
+        //=====Make Map Fullscreen=====
+        var isMapFullscreen = false;
+        var section = document.getElementsByClassName("centerSection");
+        section[0].addEventListener("click",function(e){
+            if(isMapFullscreen == false){
+                section = document.getElementsByClassName("leftSection")
+                section[0].style.width = "100%";
+                section = document.getElementsByClassName("rightSection")
+                section[0].style.width = "0%";
+                section = document.getElementsByClassName("centerSection")
+                section[0].style.left = "100%";
+                isMapFullscreen = true;
+            }else{
+                section = document.getElementsByClassName("leftSection")
+                section[0].style.width = "50%";
+                section = document.getElementsByClassName("rightSection")
+                section[0].style.width = "50%";
+                section = document.getElementsByClassName("centerSection")
+                section[0].style.left = "50%";
+                isMapFullscreen = false;
+            }
+        });
+        
     </script>
 </body>
 
