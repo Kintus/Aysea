@@ -5,7 +5,6 @@
 <head>
     <link rel="stylesheet" href="plugins/basic.css"/>
     <link rel="stylesheet" href="plugins/leaflet.css"/>
-    <script type="text/javascript" src="plugins/info.js"></script>
     <script type="text/javascript" src="plugins/leaflet.js"></script>
     <script type="text/javascript" src="plugins/jquery-3.2.1.min.js"></script>
     
@@ -37,18 +36,6 @@
         </nav>
         <div id="map"></div>
     </div>
-    <img class="centerSection" src="images/background-seperator.png")>
-    <div class="rightSection">
-        <nav>
-            <ul class="navigationList" id="sectionList">
-                <li class="navigationTab navigationCurrent" id="generalTab"><a href="#General">General</a></li>
-                <li class="navigationTab" id="religionTab"><a href="#Religion">Religion</a></li>
-                <li class="navigationTab" id="kingdomsTab"><a href="#Kindoms">Kingdoms</a></li>
-                <li class="navigationTab" id="historyTab"><a href="#History">History</a></li>
-            </ul>
-        </nav>
-        <div id="textContent"></div>
-    </div>
 
     <script>
         //=====Create Map=====
@@ -66,7 +53,7 @@
         map.setMaxBounds(new L.LatLngBounds(southWest, northEast));
         
         //=====Add Layers=====
-        L.tileLayer('./tiles/{z}/{x}/{y}.png').addTo(map);
+        L.tileLayer('./tiles/aysea/{z}/{x}/{y}.png').addTo(map);
         
         //=====Create Icons=====
         var cityMarker = L.icon({
@@ -99,14 +86,14 @@
         var cityFehrow = L.marker([-154.25, 20.75], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Fehrow'));
         var cityAberestir = L.marker([-166, 55.75], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Aberestir'));
         //Part of Auxora
-        var cityPhandra = L.marker([-117.5, 135.75], {icon: cityMarker}).addTo(map).bindPopup(setPopup('West Phandra'));
-        var cityPhandra = L.marker([-116.75, 138], {icon: cityMarker}).addTo(map).bindPopup(setPopup('East Phandra'));
+        var cityWestPhandra = L.marker([-117.5, 135.75], {icon: cityMarker}).addTo(map).bindPopup(setPopup('West Phandra'));
+        var cityEastPhandra = L.marker([-116.75, 138], {icon: cityMarker}).addTo(map).bindPopup(setPopup('East Phandra'));
         //Part of Odegone
         var cityShando = L.marker([-98.125, 127], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Shando'));
-        //var cityRylago = L.marker([-66.875, 156.625], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Rylago'));
+        var cityRylago = L.marker([-66.875, 156.625], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Rylago'));
         //Part of Luminor
-        //var cityKareem = L.marker([-50.875, 139.875], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Kareem'));
-        //var cityVrankot = L.marker([-33.5, 159.5], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Vrankot'));
+        var cityKareem = L.marker([-50.875, 139.875], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Kareem'));
+        var cityVrankot = L.marker([-33.5, 159.5], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Vrankot'));
         //Outside of Kingdoms
         //var cityCopperStead = L.marker([-83.75, 67.875], {icon: cityMarker}).addTo(map).bindPopup(setPopup('Copper Stead'));
         
@@ -126,10 +113,32 @@
         //Part of Auxora
         var lairMartina = L.marker([-112.6875, 133.9375], {icon:townMarker}).addTo(map).bindPopup(setPopup("Martina's Hideout"));
         var townTrylef = L.marker([-130.5, 80.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Trylef'));
-        //Part of Odegone
-        
+        var townNartwichwen = L.marker([-113.25, 81.125], {icon: townMarker}).addTo(map).bindPopup(setPopup('Nartwichwen'));
+        var townArmain = L.marker([-143.875, 94.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Armain'));
+        var townErsti = L.marker([-150.625, 109.75], {icon: townMarker}).addTo(map).bindPopup(setPopup('Ersti'));
+        var townThropnoshot = L.marker([-121.625, 124], {icon: townMarker}).addTo(map).bindPopup(setPopup('Thropnoshot'));
+        var townAramoor = L.marker([-123.125, 103.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Aramoor'));
+        var townFelkurnit = L.marker([-104.625, 155.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Felkurnit'));
+        var townRemshune = L.marker([-127, 70.75], {icon: townMarker}).addTo(map).bindPopup(setPopup('Remshune'));
+        //Part of Odezjo
+        var townArkenshun = L.marker([-106.375, 119], {icon: townMarker}).addTo(map).bindPopup(setPopup('Arkenshun'));
+        var townWilbunto = L.marker([-79.125, 133.75], {icon: townMarker}).addTo(map).bindPopup(setPopup('Wilbunto'));
+        var townLarth = L.marker([-82.875, 151], {icon: townMarker}).addTo(map).bindPopup(setPopup('Larth'));
+        var townTarrin = L.marker([-78.5, 165.125], {icon: townMarker}).addTo(map).bindPopup(setPopup('Tarrin'));
+        var townUtlenrek = L.marker([-58, 148.375], {icon: townMarker}).addTo(map).bindPopup(setPopup('Utlenrek'));
+        var townConrock = L.marker([-74.75, 156.875], {icon: townMarker}).addTo(map).bindPopup(setPopup('Conrock'));
+        var townPriut = L.marker([-92, 146.875], {icon: townMarker}).addTo(map).bindPopup(setPopup('Priut'));
         //Part of Luminor
-        
+        var townTerow = L.marker([-88.375, 106.5], {icon: townMarker}).addTo(map).bindPopup(setPopup('Terow'));
+        var townKire = L.marker([-66.625, 111.75], {icon: townMarker}).addTo(map).bindPopup(setPopup('Kire'));
+        var townKathnilshot = L.marker([-30.75, 116.75], {icon: townMarker}).addTo(map).bindPopup(setPopup('Kathnilshot'));
+        var townErniksi = L.marker([-18.75, 153.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Erniksi'));
+        var townVathu = L.marker([-42.625, 171.5], {icon: townMarker}).addTo(map).bindPopup(setPopup('Vathu'));
+        var townAramor = L.marker([-60.875, 184], {icon: townMarker}).addTo(map).bindPopup(setPopup('Aramor'));
+        var townReylin = L.marker([-42.625, 158.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Reylin'));
+        var townTaltut = L.marker([-57.875, 94.125], {icon: townMarker}).addTo(map).bindPopup(setPopup('Taltut'));
+        var townWarnerr = L.marker([-65, 131.875], {icon: townMarker}).addTo(map).bindPopup(setPopup('Warnerr'));
+        var townYial = L.marker([-68, 67.25], {icon: townMarker}).addTo(map).bindPopup(setPopup('Yial'));
         //=====Set Villages=====
         
         //=====Dev Lat Long Tool=====
@@ -141,37 +150,6 @@
             return str.toLowerCase();
         }
 
-        //=====Set CurrentTab=====
-        changeTextGeneral();
-        
-        //=====Change Section Tab=====
-        document.getElementById("sectionList").addEventListener("click",function(e){
-            openInfo($(e.target).parent().attr("id"), 'a');
-        });
-
-        //=====Make Map Fullscreen=====
-        var isMapFullscreen = false;
-        var section = document.getElementsByClassName("centerSection");
-        section[0].addEventListener("click",function(e){
-            if(isMapFullscreen == false){
-                section = document.getElementsByClassName("leftSection")
-                section[0].style.width = "100%";
-                section = document.getElementsByClassName("rightSection")
-                section[0].style.width = "0%";
-                section = document.getElementsByClassName("centerSection")
-                section[0].style.left = "100%";
-                isMapFullscreen = true;
-            }else{
-                section = document.getElementsByClassName("leftSection")
-                section[0].style.width = "50%";
-                section = document.getElementsByClassName("rightSection")
-                section[0].style.width = "50%";
-                section = document.getElementsByClassName("centerSection")
-                section[0].style.left = "50%";
-                isMapFullscreen = false;
-            }
-        });
-        
     </script>
 </body>
 
